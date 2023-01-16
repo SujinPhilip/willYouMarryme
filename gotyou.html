@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GOT YOU AHHAHA</title>
+    <script>
+      function runAway() {
+        var noButton = document.getElementById("no-button");
+        var x = 0;
+        var y = 0;
+        var xSpeed = 5;
+        var ySpeed = 3;
+        setInterval(function() {
+          x += xSpeed;
+          y += ySpeed;
+          noButton.style.left = x + "px";
+          noButton.style.top = y + "px";
+          if (x + noButton.clientWidth > window.innerWidth || x < 0) {
+            xSpeed = -xSpeed;
+          }
+          if (y + noButton.clientHeight > window.innerHeight || y < 0) {
+            ySpeed = -ySpeed;
+          }
+        }, 10);
+      }
+      function showMessage() {
+        alert("Your only choice is to click Yes, ahahahahah");
+      }
+      setTimeout(showMessage, 10000);
+    </script>
+ 
+  </head>
+  <body>
+  <center>
+    <br>
+    <h1>HAHAHAAH I GOT YOU </h1>
+    <br>
+    <h2>DONT YOU GET IT?? THERE IS NO "NO" BUTTON AHAHAHAHHAH</h2>
+    
+    <h3>Well, I dont want to be a villain.. so</h3>
+    <h5>Here is your another chance to confirm. Say no if you hate me<h5>
+    <br>
+    <h1>WILL YOU MARRY ME??? FINAL CHANCE</h1>
+    
+     <input type="button" value="Yes" onclick="location.href='yes.html'" style="font-size:30px; padding:20px 20px;  border: 2px solid black; color: black;">
+      <input type="button" value="No" id="no-button" onclick="runAway()" style="font-size:30px; padding:20px 20px;  position:absolute;">
+    
+    <br>
+    <br>
+    <img src="images/two.jpg" style="width:500px;height:300px;">
+  </center>  
+  </body>
+</html>
+

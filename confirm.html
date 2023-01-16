@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YOU SURE?</title>
+     <script>
+      function changeAndRedirect() {
+        var button = document.getElementById("not-button");
+        button.innerHTML = "Yes";
+        location.href = "gotyou.html";
+      }
+      
+    </script>
+   </style>
+  </head>
+  <body>
+  <center>
+    <img src="images/one.jpg" style="width:300px;height:300px;">
+    <br>
+    <h1>ARE YOUU SUREE??? CONFIRM NOW</h1>
+    <br>
+    <br>
+    <h1>Will You Marry Me?</h1>
+    
+      <input type="button" value="Yes" id="yes-button" onclick="location.href='yes.html'" style="font-size:30px; padding:20px 20px;  border: 2px solid black; color: black;">
+      <input type="button" id="not-button" value="No"  onclick="changeAndRedirect()" style="font-size:30px; padding:20px 20px;  border: 2px solid black; color: black;">
+   
+    <br>
+    <br>
+    <img src="images/two.jpg" style="width:500px;height:300px;">
+  </center>  
+  </body>
+</html>
+
+
+
+

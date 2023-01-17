@@ -22,10 +22,17 @@
           }
         }, 10);
       }
-      function showMessage() {
-        alert("Your only choice is to click Yes, ahahahahah");
-      }
-      setTimeout(showMessage, 15000);
+       setTimeout(function(){
+        alert("Your only choice is to say yes!!! AHHAHAHAAHAH");
+        var iframe = document.createElement("IFRAME");
+        iframe.setAttribute("src", "https://youtu.be/n0QT_teLcNk");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("width", "560");
+        iframe.setAttribute("height", "315");
+        document.body.appendChild(iframe);
+      }, 15000);
     </script>
  
   </head>

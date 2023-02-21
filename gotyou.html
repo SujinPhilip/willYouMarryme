@@ -2,53 +2,33 @@
 <html>
   <head>
     <title>GOT YOU AHHAHA</title>
-    <script>
-      function runAway() {
-        var noButton = document.getElementById("no-button");
-        var x = 0;
-        var y = 0;
-        var xSpeed = 5;
-        var ySpeed = 3;
-        setInterval(function() {
-          x += xSpeed;
-          y += ySpeed;
-          noButton.style.left = x + "px";
-          noButton.style.top = y + "px";
-          if (x + noButton.clientWidth > window.innerWidth || x < 0) {
-            xSpeed = -xSpeed;
-          }
-          if (y + noButton.clientHeight > window.innerHeight || y < 0) {
-            ySpeed = -ySpeed;
-          }
-        }, 10);
-      }
-      setTimeout(function(){
-        alert("YOUR ONLY CHOICE IS TO SAY YES!!! HAHAHHA");
-        var audio = new Audio("music/song.mp3");
-        audio.loop = true;
-        audio.play();
-      }, 12000);
-    </script>
- 
+    <script src="gotyou.js"></script>
+    <link href="gotyou.css" rel="stylesheet">
   </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <body>
-  <center>
-    <br>
-    <h1>HAHAHAAH I GOT YOU </h1>
-    <br>
-    <h2>DONT YOU GET IT?? THERE IS NO "NO" BUTTON AHAHAHAHHAH</h2>
-    
-    <h3>Well, I dont want to be a villain.. so</h3>
-    <h5>Here is your another chance to confirm. Say no if you hate me<h5>
-    <br>
-    <h1>WILL YOU MARRY ME??? FINAL CHANCE</h1>
-    
-     <input type="button" value="Yes" onclick="location.href='yes.html'" style="font-size:30px; padding:20px 20px;  border: 2px solid black; color: black;">
-      <input type="button" value="No" id="no-button" onclick="runAway()" style="font-size:30px; padding:20px 20px;  position:absolute;">
-    
-    <br>
-    <br>
-    <img src="images/two.jpg" style="width:500px;height:300px;">
-  </center>  
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <center>
+            <br>
+            <h1 class="alert-primary" role="alert">HAHAHAAH I GOT YOU </h1>
+            <br>
+            <h2 class="alert-warning" role="alert">DONT YOU GET IT?? THERE IS NO "NO" BUTTON AHAHAHAHHAH</h2>
+            <div class="alert-dark" role="alert">
+              <h3>Well, I dont want to be a villain.. so</h3>
+              <h5>Here is your another chance to confirm. Say no if you hate me <h5>
+            </div>
+            <br>
+            <h1 class="alert-success" role="alert">WILL YOU MARRY ME??? FINAL CHANCE</h1>
+            <input type="button" value="Yes" onclick="location.href='yes.html'" class="btn btn-success">
+            <input id = "no-button" type="button" value="No" id="no-button" onclick="runAway()">
+            <br>
+            <br>
+            <img src="images/two.jpg" class="img-fluid">
+          </center>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
